@@ -21,21 +21,24 @@ body {
   max-width: 1200px;
 }
 
-@media (min-width: 500px) {
+
+@media (min-width: 300px) {
+  
   .container {
     display: grid;
     grid-template-columns: 220px 1fr;
+    
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 750px) {
   body {
     background: linear-gradient(135deg, rgba(240, 240, 240, 1) 50%, rgba(225, 225, 225, 1) 50%);
   }
-
-  .container {
+    .container {
+      display: grid;
     grid-template-columns: 2fr 3fr;
   }
-
+    
   .info,
   .content {
     padding: 3rem;
@@ -51,6 +54,8 @@ body {
 
 @media (min-width: 1200px) {
   .container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     margin: 5vh auto;
     box-shadow: 30px 50px 40px 20px rgba(0, 0, 0, 0.3);
   }
@@ -95,12 +100,19 @@ a .fas {
   padding: 1rem;
 }
 
+
 .photo img {
+  margin: 0 auto;
   width: 100%;
+  /*height: 350px;*/
+  border: 3px solid #fff;
+  
   display: block;
-  border-radius: 50%;
-  filter: grayscale(1) contrast(1.2);
+  
+  
 }
+
+
 h1 {
   font-size: 2rem;
   font-weight: 300;
@@ -156,7 +168,7 @@ h2::after {
 .skills .skill {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 1rem;
+  grid-gap: 1rem;
   align-items: center;
   margin: 0 0 1em;
 }
@@ -191,6 +203,39 @@ h2::after {
 .experience .date-range time {
   font-size: 0.7rem;
 }
+.education li {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.education .short-info {
+  margin-bottom: 1rem;
+}
+
+.education .position {
+  font-weight: 600;
+}
+
+.education .date-range time {
+  font-size: 0.8rem;
+}
+.army li {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.army .short-info {
+  margin-bottom: 1rem;
+}
+
+.army .military-unit {
+  font-weight: 600;
+}
+
+.army .date-range time {
+  font-size: 0.8rem;
+}
+
 .interests {
   list-style: none;
   padding: 0;
